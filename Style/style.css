@@ -1,0 +1,32 @@
+.card{
+   margin-top:150px ;
+   margin-left:100px ;
+   margin-right: ;
+   z-index: 1;
+  
+}
+body {
+    background-image: url("/image/login.jpg") ;
+    background-position: center;
+    background-size: 100% 150%;
+    background-repeat: no-repeat;
+  
+      }
+      
+      #login-form {
+        position: relative;
+        left: 100px;
+        top: 50px;
+    }
+    #content{
+        text-align: center;
+        position: relative;
+        
+        top: 250px;
+    }
+    h2{
+        font-family:  Arial;
+        font-weight: bold;
+        color: black
+        ;
+    }
