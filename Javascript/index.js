@@ -93,15 +93,22 @@ window.onload = () => {
     content.appendChild(h2)
     
     const p1 = document.createElement('p')
-    p1.textContent=`We believe finding a hotel should be easy.'<br>' We’ve partnered with the top 
+    p1.textContent=`We believe finding a hotel should be easy. We’ve partnered with the top 
     sites to help you find the perfect hotel. We’ve designed VacationRenter from the ground up for the next generation of travelers.`
     content.appendChild(p1)
 
+    const image = document.createElement('img')
+    image.id='image'
+    image.src='/image/Screenshot from 2022-12-14 23-32-45.png'
+    content.appendChild(image)
+
+    document.getElementById("image").style.display="block";
     document.getElementById("content").style.display="block";
     document.getElementById("login-screen").style.display = "block";
     button.addEventListener('click', () => {
     document.getElementById("login-screen").style.display = "none"; 
-    document.getElementById("content").style.display="none";});
+    document.getElementById("content").style.display="none";
+    document.getElementById("image").style.display="none";});
 
     
   }
