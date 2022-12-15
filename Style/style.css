@@ -1,9 +1,13 @@
 .card{
    margin-top:150px ;
    margin-left:100px ;
-   margin-right: ;
+   
    z-index: 1;
+   
   
+}
+#backGround{
+    
 }
 body {
     background-image: url("/image/login.jpg") ;

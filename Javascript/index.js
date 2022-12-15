@@ -1,4 +1,5 @@
 window.onload = () => {
+   
     // Show the loading screen
     
   
@@ -102,13 +103,18 @@ window.onload = () => {
     image.src='/image/Screenshot from 2022-12-14 23-32-45.png'
     content.appendChild(image)
 
-    document.getElementById("image").style.display="block";
+    document.getElementById("login").style.display="block";
     document.getElementById("content").style.display="block";
     document.getElementById("login-screen").style.display = "block";
+   
     button.addEventListener('click', () => {
     document.getElementById("login-screen").style.display = "none"; 
     document.getElementById("content").style.display="none";
-    document.getElementById("image").style.display="none";});
+    document.getElementById("login").style.display="none";
+    document.getElementById("text").style.display="block"});
 
     
-  }
+  } 
+
+  
+  
