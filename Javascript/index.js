@@ -6,9 +6,8 @@ window.onload = () => {
     // Hide the login page after login button is clicked
      
 
-    const bg =document.createElement('div')
-    bg.className='background-image'
-     
+  
+     const mainContent=document.getElementById('mainContent')
     const page =document.getElementById ("login-screen")
     
     // log in 
@@ -20,7 +19,7 @@ window.onload = () => {
     const card= document.createElement('div')
     card.className = 'card'
      card.style='width: 35rem'
-     form.appendChild(card)
+     page.appendChild(card)
  
  
      const cardBody = document.createElement('div')
@@ -103,18 +102,28 @@ window.onload = () => {
     image.src='/image/Screenshot from 2022-12-14 23-32-45.png'
     content.appendChild(image)
 
-    document.getElementById("login").style.display="block";
+    const bg =document.createElement('img')
+    bg.id='background-image'
+    bg.src='/image/login.jpg'
+    page.appendChild(bg)
+     
+     
     document.getElementById("content").style.display="block";
     document.getElementById("login-screen").style.display = "block";
    
     button.addEventListener('click', () => {
     document.getElementById("login-screen").style.display = "none"; 
     document.getElementById("content").style.display="none";
-    document.getElementById("login").style.display="none";
-    document.getElementById("text").style.display="block"});
+    
+    // page Main Content
+    
+    const message = document.createElement('p');
+    message.textContent = 'Hey!';
+    mainContent.appendChild(message);
 
     
-  } 
-
-  
-  
+     });
+     
+      }
+    
+ 
