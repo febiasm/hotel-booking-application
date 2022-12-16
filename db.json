@@ -62,94 +62,93 @@
       },
       {
         "id": "7",
-        "title": "The Skydivers",
-        "runtime": "94",
-        "capacity": 30,
-        "showtime": "07:30PM",
-        "tickets_sold": 22,
-        "description": "A woman seeks revenge on her former lover, who owns a skydiving business.",
-        "poster": "https://www.gstatic.com/tv/thumb/v22vodart/40518/p40518_v_v8_aa.jpg"
+        "name": "Crowne Plaza Nairobi",
+        "rating": "5.1",
+         "class": "Excellent",
+        "description": "Hotel.5-star Hotel",
+        "additional": "pool.Pets Allowed.Parking",
+        "price":"Ksh35,000",
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/06/51/96/hotel-exterior-during.jpg?w=1200&h=-1&s=1"
       },
       {
         "id": "8",
-        "title": "The Killer Shrews",
-        "runtime": "115",
-        "capacity": 40,
-        "showtime": "08:30PM",
-        "tickets_sold": 32,
-        "description": "On an isolated island, a small group of people are terrorized by giant voracious shrews in the midst of a hurricane.",
-        "poster": "https://www.gstatic.com/tv/thumb/v22vodart/1466/p1466_v_v8_ab.jpg"
+        "name": "Park inn By Radisson Nairobi Westlands",
+        "rating": "4.9",
+         "class": "Good",
+        "description": "Hotel.4-star Hotel",
+        "additional": "pool.Parking",
+        "price":"Ksh25,000",
+        "image": "https://media.radissonhotels.net/image/park-inn-by-radisson-nairobi-westlands/exteriorview/16256-114865-f67046678_3xl.jpg?impolicy=GalleryLightbox"
       },
       {
         "id": "9",
-        "title": "Project Moon Base",
-        "runtime": "99",
-        "capacity": 40,
-        "showtime": "07:30PM",
-        "tickets_sold": 22,
-        "description": "A saboteur posing as a scientist strives to destroy the world's first space station.",
-        "poster": "https://www.gstatic.com/tv/thumb/v22vodart/46755/p46755_v_v8_aa.jpg"
+        "name": "The Boma Nairobi",
+        "rating": "5.5",
+         "class": "Excellent",
+        "description": "Hotel.5-star Hotel",
+        "additional": "pool.Parking.",
+        "price":"Ksh33,000",
+        "image": "https://res.cloudinary.com/simplotel/image/upload/x_0,y_378,w_4032,h_2268,r_0,c_crop,q_80,fl_progressive/w_825,f_auto,c_fit/the-boma-nairobi/Exterior_facade_-_The_Boma_-_Hotel_near_Wilson_Airport_Nairobi_"
       },
       {
         "id": "10",
-        "title": "The Giant Spider Invasion",
-        "runtime": "122",
-        "capacity": 50,
-        "showtime": "10:00PM",
-        "tickets_sold": 44,
-        "description": "Giant spiders from another dimension invade Wisconsin.",
-        "poster": "https://www.gstatic.com/tv/thumb/v22vodart/42171/p42171_v_v8_ab.jpg"
+        "name": "Ole-Sereni Hotel",
+        "rating": "5.9",
+         "class": "Excellent",
+        "description": "Hotel.5-star Hotel",
+        "additional": "pool.Parking.Internet",
+        "price":"Ksh43,000",
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/a9/f2/5d/ole-sereni.jpg?w=1200&h=-1&s=1_"
       },
       {
         "id": "11",
-        "title": "Catalina Caper",
-        "runtime": "104",
-        "capacity": 30,
-        "showtime": "06:00PM",
-        "tickets_sold": 12,
-        "description": "A group of swingin' teens take time out from having fun in the sun to try to foil a group of crooks searching for a stolen scroll.",
-        "poster": "https://www.gstatic.com/tv/thumb/v22vodart/58122/p58122_v_v8_aa.jpg"
+        "name": "Ole-Sereni Hotel",
+        "rating": "4.0",
+         "class": "Average",
+        "description": "Hotel.4-star Hotel",
+        "additional": "pool.Parking.Internet",
+        "price":"Ksh13,000",
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/39/42/71/fair-acres-guest-house.jpg?w=700&h=-1&s=1"
       },
       {
         "id": "12",
-        "title": "Secret Agent Super Dragon",
-        "runtime": "104",
-        "capacity": 30,
-        "showtime": "07:00PM",
-        "tickets_sold": 20,
-        "description": "A series of murders in Michigan lead an American secret agent to Amsterdam, where he uncovers a plot to imperil the world with a potent new drug.",
-        "poster": "https://www.gstatic.com/tv/thumb/v22vodart/93417/p93417_v_v8_aa.jpg",
-        "showing_id": "12"
+        "name": "Westend",
+        "rating": "3.5",
+         "class": "Average",
+        "description": "Hotel.3-star Hotel",
+        "additional": "Parking.Internet",
+        "price":"Ksh8,000",
+        "image": "https://imgcld.yatra.com/ytimages/image/upload/t_seo_Hotel_w_930_h_550_c_fill_g_auto_q_40_f_jpg/v1530596112/Hotel/Matheran/00004480/WESTEND1_iYTShd.jpg"
       },
       {
         "id": "13",
-        "title": "Wild Rebels",
-        "runtime": "100",
-        "capacity": 40,
-        "showtime": "09:00PM",
-        "tickets_sold": 31,
-        "description": "A stock car driver goes undercover as the wheel man for a motorcycle gang.",
-        "poster": "https://www.gstatic.com/tv/thumb/v22vodart/45367/p45367_v_v8_aa.jpg"
+        "name": "Westend",
+        "rating": "3.5",
+         "class": "Average",
+        "description": "Hotel.3-star Hotel",
+        "additional": "Parking.Internet",
+        "price":"Ksh8,000",
+        "image": "https://imgcld.yatra.com/ytimages/image/upload/t_seo_Hotel_w_930_h_550_c_fill_g_auto_q_40_f_jpg/v1530596112/Hotel/Matheran/00004480/WESTEND1_iYTShd.jpg"
       },
       {
         "id": "14",
-        "title": "Danger: Diabolik",
-        "runtime": "111",
-        "capacity": 50,
-        "showtime": "08:00PM",
-        "tickets_sold": 40,
-        "description": "International man of mystery Diabolik and his lover pull off heist after heist, all while European cops led by Inspector Ginko and envious mobsters led by Ralph Valmont are closing in on them.",
-        "poster": "https://www.gstatic.com/tv/thumb/v22vodart/11850/p11850_v_v8_aa.jpg"
+        "name": " The ConCord Hotel & suites",
+        "rating": "5.5",
+         "class": "Excellent",
+        "description": "Hotel.5-star Hotel",
+        "additional": "pool.Tv.Air Conditioner.Parking.Internet",
+        "price":"Ksh38,000",
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/ef/d4/a7/the-concord-hotel.jpg?w=1100&h=-1&s=1"
       },
       {
         "id": "15",
-        "title": "Village Of The Giants",
-        "runtime": "98",
-        "capacity": 50,
-        "showtime": "04:45PM",
-        "tickets_sold": 33,
-        "description": "Delinquent teen-agers ingest a substance and grow thirty feet tall, then proceed to take over a small town.",
-        "poster": "https://www.gstatic.com/tv/thumb/v22vodart/37991/p37991_v_v8_aa.jpg"
+        "name": "Trademark",
+        "rating": "5.5",
+         "class": "Excellent",
+        "description": "Hotel.5-star Hotel",
+        "additional": "Tv.Parking.Internet",
+        "price":"Ksh31,000",
+        "image": "https://www.kenyawildlifetours.com/wp-content/uploads/2022/02/597e827e_z.jpg"
       }
     ]
   }
