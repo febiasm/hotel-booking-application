@@ -5,7 +5,78 @@ window.onload = () => {
   
     // Hide the login page after login button is clicked
      
+   
+    
+   
 
+    const header= document.createElement('header')
+    header.id='header'
+    header.style.display='none'
+    mainContent.appendChild(header)
+
+    const logo =document.createElement('a')
+    logo.href="#"
+    logo.className='logo'
+    logo.textContent=`Febias-Travels`
+    header.appendChild(logo )
+
+    const list= document.createElement('ul')
+    header.appendChild(list)
+
+    const li = document.createElement('li')
+    list.appendChild(li)
+
+    const a =document.createElement('a')
+    a.href='#'
+    a.textContent=`home`
+    li.appendChild(a)
+
+    const li2 = document.createElement('li');
+    list.appendChild(li2);
+
+    const a2 =document.createElement('a')
+    a2.href='#'
+    a2.textContent=`About`
+    li2.appendChild(a2)
+
+    const li3 = document.createElement('li');
+    list.appendChild(li3);
+
+    const a3 =document.createElement('a')
+    a3.href='#'
+    a3.textContent=`Services`
+    li3.appendChild(a3)
+
+
+    const li4 = document.createElement('li');
+    list.appendChild(li4);
+
+    const a4 =document.createElement('a')
+    a4.href='#'
+    a4.textContent=`Portfolio`
+    li4.appendChild(a4)
+
+    const li5 = document.createElement('li');
+    list.appendChild(li5);
+
+    const a5 =document.createElement('a')
+    a5.href='#'
+    a5.textContent=`Team`
+    li5.appendChild(a5)
+
+    const li6 = document.createElement('li');
+    list.appendChild(li6);
+
+    const a6 =document.createElement('a')
+    a6.href='#'
+    a6.textContent=`Contact`
+    li6.appendChild(a6)
+
+    window.addEventListener("scroll", function(){
+        var header = document.getElementById("header");
+        header.classList.toggle("sticky", window.scrollY > 0)
+    })
+    
   
      
     const page =document.getElementById ("login-screen")
@@ -107,87 +178,32 @@ window.onload = () => {
     bg.src='/image/login.jpg'
     page.appendChild(bg)
      
-     
+    const navbar = document.getElementById('navbar');
     document.getElementById("content").style.display="block";
     document.getElementById("login-screen").style.display = "block";
    
     button.addEventListener('click', () => {
+        
+          if (header.style.display==='none') {
+            header.style.display='block'
+            
+          }
+          else {
+            navbar.style.display = 'none';
+          }
     document.getElementById("login-screen").style.display = "none"; 
     document.getElementById("content").style.display="none";
+     
     
     // page Main Content
-    const mainContent=document.getElementById('mainContent')
-
-   
-
-    const header= document.createElement('header')
-    header.id='header'
-    mainContent.appendChild(header)
-
-    const logo =document.createElement('a')
-    logo.href="#"
-    logo.className='logo'
-    logo.textContent=`Febias-Travels`
-    header.appendChild(logo )
-
-    const list= document.createElement('ul')
-    header.appendChild(list)
-
-    const li = document.createElement('li')
-    list.appendChild(li)
-
-    const a =document.createElement('a')
-    a.href='#'
-    a.textContent=`home`
-    li.appendChild(a)
-
-    const li2 = document.createElement('li');
-    list.appendChild(li2);
-
-    const a2 =document.createElement('a')
-    a2.href='#'
-    a2.textContent=`About`
-    li2.appendChild(a2)
-
-    const li3 = document.createElement('li');
-    list.appendChild(li3);
-
-    const a3 =document.createElement('a')
-    a3.href='#'
-    a3.textContent=`Services`
-    li3.appendChild(a3)
+    
+    
 
 
-    const li4 = document.createElement('li');
-    list.appendChild(li4);
 
-    const a4 =document.createElement('a')
-    a4.href='#'
-    a4.textContent=`Portfolio`
-    li4.appendChild(a4)
 
-    const li5 = document.createElement('li');
-    list.appendChild(li5);
-
-    const a5 =document.createElement('a')
-    a5.href='#'
-    a5.textContent=`Team`
-    li5.appendChild(a5)
-
-    const li6 = document.createElement('li');
-    list.appendChild(li6);
-
-    const a6 =document.createElement('a')
-    a6.href='#'
-    a6.textContent=`Contact`
-    li6.appendChild(a6)
-
-    window.addEventListener("scroll", function(){
-        var header = document.getElementById("header");
-        header.classList.toggle("sticky", window.scrollY > 0)
-    })
-
-  
+     
+    
 
      });
      

@@ -83,11 +83,14 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      display: inline-block;
+      margin: 0 0 0 800px;
     }
 
     header ul li {
       position: relative;
       list-style: none;
+      display: inline;
     }
 
     header ul li a {
@@ -98,4 +101,10 @@
       letter-spacing: 2px;
       font-weight: 500px;
       transition: 0.6s;
+    }
+    .bookingCalender{
+      float: left;
+      color: rgb(13, 15, 15);
+      margin-top:150px ;
+      
     }
