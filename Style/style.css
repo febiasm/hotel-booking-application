@@ -1,7 +1,7 @@
 
 #login-screen {
     position: relative;
-    
+    display: inline-block;
   }
   
   .card {
@@ -45,7 +45,7 @@
 
     /* navigation bar */
 
-    #header{
+    #header {
       position: fixed;
       top: 0;
       left: 0%;
@@ -55,18 +55,22 @@
       align-items: center;
       transition: 0.6s;
       padding: 40px 100px;
+      z-index: 3; /* add a transparent z-index value */
     }
-    header.sticky{
-      padding:  5px 100px;
+    nav {
+      width: 80%; /* adjust the width to fit the links within it */
+    }
+    nav.sticky{
+      
       background-color: aqua;
       
       
     }
-    header.sticky .logo
-    header.sticky ul li a{
+    nav.sticky .logo
+    nav.sticky ul li a{
        color: aliceblue;
     }
-    header .logo{
+    nav .logo{
       position: relative;
       font-weight: 700;
       color: rgb(0, 0, 0);
@@ -78,22 +82,22 @@
 
     }
 
-    header ul {
-      position: relative;
+  
+    nav ul {
       display: flex;
-      justify-content: center;
+      justify-content: flex-end;
       align-items: center;
-      display: inline-block;
-      margin: 0 0 0 800px;
+      list-style: none;
     }
+    
 
-    header ul li {
+    nav ul li {
       position: relative;
       list-style: none;
       display: inline;
     }
 
-    header ul li a {
+    nav ul li a {
       position: relative;
       margin: 0 15px;
       text-decoration: none;
@@ -108,3 +112,22 @@
       margin-top:150px ;
       
     }
+    main {
+      padding-top: 150px; /* change the value to match the height of the navbar */
+      display: inline-block;
+    }
+     
+      
+    
+    form {
+      display: flex; /* change from inline-block to flex */
+      justify-content: space-between; /* position elements with equal space between them */
+      margin-left: 300px;
+    }
+    input[type="date"] {
+      margin: 0 100px; /* add a 10px margin to the left and right sides of each control */
+    }
+    input[type="date"]:focus {
+      background-color: rgb(185, 178, 178); /* change the background color of the control when it is focused */
+    }
+    

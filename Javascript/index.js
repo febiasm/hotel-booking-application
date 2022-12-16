@@ -5,11 +5,14 @@ window.onload = () => {
   
     // Hide the login page after login button is clicked
      
+    // callender
    
+
+    // 
     
    
 
-    const header= document.createElement('header')
+    const header= document.createElement('nav')
     header.id='header'
     header.style.display='none'
     mainContent.appendChild(header)
@@ -74,8 +77,8 @@ window.onload = () => {
 
     window.addEventListener("scroll", function(){
         var header = document.getElementById("header");
-        header.classList.toggle("sticky", window.scrollY > 0)
-    })
+        header.classList.toggle("sticky", window.scrollY > 0);
+    });
     
   
      
