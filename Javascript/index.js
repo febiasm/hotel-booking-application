@@ -88,6 +88,9 @@ window.onload = () => {
     
 
     const form =document.createElement('form')
+    form.id="calender"
+    
+    
     page.append(form)
 
     const card= document.createElement('div')
@@ -180,12 +183,17 @@ window.onload = () => {
     bg.id='background-image'
     bg.src='/image/login.jpg'
     page.appendChild(bg)
-     
+
+
+    const main = document.querySelector('main'); 
+    main.style.display = 'none';
+
     const navbar = document.getElementById('navbar');
     document.getElementById("content").style.display="block";
     document.getElementById("login-screen").style.display = "block";
    
     button.addEventListener('click', () => {
+        main.style.display = 'block';
         
           if (header.style.display==='none') {
             header.style.display='block'

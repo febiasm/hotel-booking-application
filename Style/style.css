@@ -78,7 +78,7 @@
       font-size: 2em;
       text-transform: uppercase;
       letter-spacing: 2px;
-      transition: 0.6s;
+      transition: 10.6s;
 
     }
 
@@ -104,7 +104,7 @@
       color: black;
       letter-spacing: 2px;
       font-weight: 500px;
-      transition: 0.6s;
+      transition: 10.6s;
     }
     .bookingCalender{
       float: left;
@@ -120,14 +120,19 @@
       
     
     form {
+    
       display: flex; /* change from inline-block to flex */
-      justify-content: space-between; /* position elements with equal space between them */
       margin-left: 300px;
+      background-color: white;
+      
     }
     input[type="date"] {
       margin: 0 100px; /* add a 10px margin to the left and right sides of each control */
+ 
     }
     input[type="date"]:focus {
       background-color: rgb(185, 178, 178); /* change the background color of the control when it is focused */
     }
+    
+    
     
