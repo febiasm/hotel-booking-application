@@ -133,6 +133,10 @@
     input[type="date"]:focus {
       background-color: rgb(185, 178, 178); /* change the background color of the control when it is focused */
     }
-    
+    #map{
+      height: 400px;
+      width: 50%;
+      margin-bottom: 100px;
+    }
     
     

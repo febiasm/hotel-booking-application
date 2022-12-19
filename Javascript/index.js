@@ -1,16 +1,122 @@
-window.onload = () => {
-   
-    // Show the loading screen
-    
-  
-    // Hide the login page after login button is clicked
-     
-    // callender
-   
 
-    // 
-    
-   
+ window.onload = () => {
+
+
+
+
+
+    const url = "https://api.jsonbin.io/v3/b/63a079a015ab31599e203647"
+
+          fetch(url)
+          .then(response => response.json())
+          .then(data => {
+            const hotel =data.record.hotels;
+             
+            hotel.forEach(hotel => {
+                const name =hotel.name
+                const  rating=hotel.rating
+                const Hotelclass =hotel.class 
+                const description=hotel.description
+                const additional=hotel.additional
+                const price = hotel.price
+                const image =hotel.image
+
+                const cardContent = document.querySelector('.cardContent');
+               
+                const card = document.createElement('div');
+                card.className = 'card';
+                card.style.width = '18rem';
+                card.style.margin = '14px'  
+                cardContent.appendChild(card)
+
+                const img = document.createElement('img');
+                img.src = image;
+                img.className = 'card-img-top';
+                card.appendChild(img)
+
+                const cardBody = document.createElement('div');
+                cardBody.className = 'card-body';
+                card.appendChild(cardBody)
+                const h4 = document.createElement('h4');
+                h4.className = 'card-title';
+                h4.innerHTML = name;
+                cardBody.appendChild(h4);
+
+                const p = document.createElement('p');
+                p.className = 'card-text';
+                p.innerHTML = `⭐ ${rating} ${Hotelclass}`;
+                cardBody.appendChild(p);
+
+              
+
+                const p3 = document.createElement('p');
+                p3.className = 'card-text';
+                p3.innerHTML = description;
+                cardBody.appendChild(p3);
+
+                const p4 = document.createElement('p');
+                p4.className = 'card-text';
+                p4.innerHTML = additional;
+                cardBody.appendChild(p4);
+
+                const p5 = document.createElement('p');
+                p5.className = 'card-text';
+                p5.innerHTML = `${price} / night`;
+                cardBody.appendChild(p5);
+            });
+          })
+          initMap();
+
+function initMap() {
+  // The location of Uluru
+  var options ={
+    zoom:12,
+    center:{lat:-1.291926,lng: 36.819230}
+  }
+  // The map, centered at Uluru
+  var map = new google.maps.Map(document.getElementById("map"),options)  
+
+  // add marker function 
+  const urrl = "https://api.jsonbin.io/v3/b/63a079a015ab31599e203647"
+
+  fetch(urrl)
+   .then(response => response.json())
+   .then(data => {
+     const hotels = data.record.hotels;
+     hotels.forEach(hotel => {
+       addMarker(hotel, map);
+     });
+   });
+
+   function addMarker(hotel, map) {
+     var marker = new google.maps.Marker({
+       position: hotel.coords, // use the coords property from the hotel object as the position for the marker
+       map: map,
+     });
+
+     // add an info window to the marker
+     if (hotel.name) {
+       const infowindow = new google.maps.InfoWindow({
+         content: `
+         <div class="card" style="width: 10rem;">
+         <img src="${hotel.image}" class="card-img-top" alt="...">
+         <div class="card-body">
+           <h5 class="card-title">${hotel.name}</h5>
+           <p class="card-text">⭐ ${hotel.rating} ${hotel.class}</p>
+          
+         </div>
+       </div>`
+       });
+       marker.addListener('mouseover', function(){
+         infowindow.open(map, marker);
+       });
+       marker.addListener('mouseout', function () {
+        infowindow.close();
+      });
+    }
+  }
+}
+
 
     const header= document.createElement('nav')
     header.id='header'
@@ -185,6 +291,11 @@ window.onload = () => {
     page.appendChild(bg)
 
 
+    const cardContent= document.querySelector('.cardContent')
+    cardContent.style.display = 'none';
+
+    const map =document.getElementById('map')
+    map.style.display='none';
     const main = document.querySelector('main'); 
     main.style.display = 'none';
 
@@ -195,9 +306,17 @@ window.onload = () => {
     button.addEventListener('click', () => {
         main.style.display = 'block';
         
+        
           if (header.style.display==='none') {
             header.style.display='block'
             
+          }
+          if ( cardContent.style.display === 'none'){
+            cardContent.style.display = 'block';
+          }
+          if (map.style.display==='none'){
+            map.style.display='block'
+
           }
           else {
             navbar.style.display = 'none';
@@ -210,14 +329,9 @@ window.onload = () => {
     
     
 
-
-
-
-     
-    
-
-     });
-     
-      }
-    
  
+     
+   
+    });
+  
+  }

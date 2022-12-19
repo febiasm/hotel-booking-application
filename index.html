@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/Style/bootstrap.css" />
     <title>Febias Hotels</title>
   </head>
+  <div class="hide">
   <div id="main2" class="main">
    
   </div>
@@ -27,16 +28,22 @@
         <input class="form-control" type="date" id="end-date" name="end-date" style="width: 18rem;">
       </form>
     </main>
-    
-    
    
     <div id="content"> </div>
+    <div class="cardContent"></div>
+    
+  </div>
+  <div id="map"></div>
+    
    
-   
-    <script src="/Javascript/index.js"></script>
-   
-</section>
 
+    
+   <script
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIW6EA2N4PKHBeRWvr_xuctRuZTbYU8TI&callback=initMap&v=weekly"
+   defer
+ ></script>
+ <script src="/Javascript/index.js"></script>
+ 
  
    
  

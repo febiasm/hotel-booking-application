@@ -8,7 +8,11 @@
         "description": "Hotel.5-star Hotel",
         "additional": "Kitchen.Air Conditioner.internet",
         "price":"Ksh23,379",
-        "image": "https://img.directhotels.com/ke/nairobi/palacina-the-residence-the-suites/1.jpg"
+        "image": "https://img.directhotels.com/ke/nairobi/palacina-the-residence-the-suites/1.jpg",
+        "coords": {
+          "lat": -1.282908,
+          "lng": 36.791955
+        }
       },
       {
         "id": "2",
@@ -18,7 +22,11 @@
         "description": "Hotel.5-star Hotel",
         "additional": "Air Conditioner.internet.Parking",
         "price":"Ksh33,379",
-        "image": "https://images.cvent.com/CSN/0ad83279-499c-4f16-b6ea-d255bbe6ce9c/images/4a32182e62ff4b029fea65ad4925af5f_LARGE!_!ddb56887dcf6628ce3c3800cc02b5763.jpg?unique=true&f=webp&d=1920"
+        "image": "https://images.cvent.com/CSN/0ad83279-499c-4f16-b6ea-d255bbe6ce9c/images/4a32182e62ff4b029fea65ad4925af5f_LARGE!_!ddb56887dcf6628ce3c3800cc02b5763.jpg?unique=true&f=webp&d=1920",
+        "coords": {
+          "lat": -1.271443, 
+          "lng": 36.808838
+        }
       },
       {
         "id": "3",
@@ -28,7 +36,12 @@
         "description": "Hotel.5-star Hotel",
         "additional": "pool.Air Conditioner.internet.Parking",
         "price":"Ksh29,379",
-        "image": "https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/partnerimages/49/56/495631654.jpeg"
+        "image": "https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/partnerimages/49/56/495631654.jpeg",
+        "coords": {
+          "lat": -1.284245, 
+          "lng": 36.822984 
+        }
+        
       },
       {
         "id": "4",
@@ -38,7 +51,11 @@
         "description": "Hotel.5-star Hotel",
         "additional": "lawn / Garden.Kitchen.Air Conditioner.Parking",
         "price":"Ksh34,379",
-        "image": "https://pix8.agoda.net/hotelImages/9455124/0/4311c63b7c31d6e42eab66d2078cf3c2.jpg?ca=20&ce=0&s=1024x768"
+        "image": "https://pix8.agoda.net/hotelImages/9455124/0/4311c63b7c31d6e42eab66d2078cf3c2.jpg?ca=20&ce=0&s=1024x768",
+        "coords": {
+          "lat": -1.278351, 
+          "lng": 36.804619 
+        }
       },
       {
         "id": "5",
@@ -48,7 +65,11 @@
         "description": "Hotel.5-star Hotel",
         "additional": "Pets Allowed.Air Conditioner.Parking",
         "price":"Ksh24,379",
-        "image": "https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/partnerimages/11/50/1150708174.jpeg"
+        "image": "https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/partnerimages/11/50/1150708174.jpeg",
+        "coords": {
+          "lat":-1.262231, 
+          "lng":36.805473 
+        }
       },
       {
         "id": "6",
@@ -58,7 +79,11 @@
         "description": "Hotel.3-star Hotel",
         "additional": "Air Conditioner.Parking",
         "price":"Ksh15,379",
-        "image": "https://www.kenyawildlifetours.com/wp-content/uploads/2022/04/Town_Lodge_Upper_Hill-Nairobi-Aussenansicht-878258.jpg"
+        "image": "https://www.kenyawildlifetours.com/wp-content/uploads/2022/04/Town_Lodge_Upper_Hill-Nairobi-Aussenansicht-878258.jpg",
+        "coords": {
+          "lat":-1.292747, 
+          "lng":36.810190  
+        }
       },
       {
         "id": "7",
@@ -68,7 +93,11 @@
         "description": "Hotel.5-star Hotel",
         "additional": "pool.Pets Allowed.Parking",
         "price":"Ksh35,000",
-        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/06/51/96/hotel-exterior-during.jpg?w=1200&h=-1&s=1"
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/06/51/96/hotel-exterior-during.jpg?w=1200&h=-1&s=1",
+        "coords": {
+          "lat":-1.300455, 
+          "lng":36.815348 
+        }
       },
       {
         "id": "8",
@@ -78,7 +107,11 @@
         "description": "Hotel.4-star Hotel",
         "additional": "pool.Parking",
         "price":"Ksh25,000",
-        "image": "https://media.radissonhotels.net/image/park-inn-by-radisson-nairobi-westlands/exteriorview/16256-114865-f67046678_3xl.jpg?impolicy=GalleryLightbox"
+        "image": "https://media.radissonhotels.net/image/park-inn-by-radisson-nairobi-westlands/exteriorview/16256-114865-f67046678_3xl.jpg?impolicy=GalleryLightbox",
+        "coords": {
+          "lat":-1.263478, 
+          "lng":36.800344 
+        }
       },
       {
         "id": "9",
@@ -88,7 +121,11 @@
         "description": "Hotel.5-star Hotel",
         "additional": "pool.Parking.",
         "price":"Ksh33,000",
-        "image": "https://res.cloudinary.com/simplotel/image/upload/x_0,y_378,w_4032,h_2268,r_0,c_crop,q_80,fl_progressive/w_825,f_auto,c_fit/the-boma-nairobi/Exterior_facade_-_The_Boma_-_Hotel_near_Wilson_Airport_Nairobi_"
+        "image": "https://res.cloudinary.com/simplotel/image/upload/x_0,y_378,w_4032,h_2268,r_0,c_crop,q_80,fl_progressive/w_825,f_auto,c_fit/the-boma-nairobi/Exterior_facade_-_The_Boma_-_Hotel_near_Wilson_Airport_Nairobi_",
+        "coords": {
+          "lat":-1.324167, 
+          "lng":36.833465  
+        }
       },
       {
         "id": "10",
@@ -98,17 +135,25 @@
         "description": "Hotel.5-star Hotel",
         "additional": "pool.Parking.Internet",
         "price":"Ksh43,000",
-        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/a9/f2/5d/ole-sereni.jpg?w=1200&h=-1&s=1_"
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/a9/f2/5d/ole-sereni.jpg?w=1200&h=-1&s=1_",
+        "coords": {
+          "lat":-1.326477,
+          "lng":36.847331  
+        }
       },
       {
         "id": "11",
-        "name": "Ole-Sereni Hotel",
+        "name": "Eka Hotel Nairobi",
         "rating": "4.0",
          "class": "Average",
         "description": "Hotel.4-star Hotel",
         "additional": "pool.Parking.Internet",
         "price":"Ksh13,000",
-        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/39/42/71/fair-acres-guest-house.jpg?w=700&h=-1&s=1"
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/39/42/71/fair-acres-guest-house.jpg?w=700&h=-1&s=1",
+        "coords": {
+          "lat":-1.324030, 
+          "lng":36.844742 
+        }
       },
       {
         "id": "12",
@@ -118,17 +163,25 @@
         "description": "Hotel.3-star Hotel",
         "additional": "Parking.Internet",
         "price":"Ksh8,000",
-        "image": "https://imgcld.yatra.com/ytimages/image/upload/t_seo_Hotel_w_930_h_550_c_fill_g_auto_q_40_f_jpg/v1530596112/Hotel/Matheran/00004480/WESTEND1_iYTShd.jpg"
+        "image": "https://imgcld.yatra.com/ytimages/image/upload/t_seo_Hotel_w_930_h_550_c_fill_g_auto_q_40_f_jpg/v1530596112/Hotel/Matheran/00004480/WESTEND1_iYTShd.jpg",
+        "coords": {
+          "lat":-1.257535,
+          "lng": 36.799109
+        }
       },
       {
         "id": "13",
-        "name": "Westend",
+        "name": "Sherry Homes",
         "rating": "3.5",
          "class": "Average",
         "description": "Hotel.3-star Hotel",
         "additional": "Parking.Internet",
-        "price":"Ksh8,000",
-        "image": "https://imgcld.yatra.com/ytimages/image/upload/t_seo_Hotel_w_930_h_550_c_fill_g_auto_q_40_f_jpg/v1530596112/Hotel/Matheran/00004480/WESTEND1_iYTShd.jpg"
+        "price":"Ksh4,000",
+        "image": "https://images.trvl-media.com/lodging/25000000/24010000/24006500/24006494/9176081c.jpg?impolicy=resizecrop&rw=670&ra=fit",
+        "coords": {
+          "lat":-1.257070, 
+          "lng": 36.799535
+        }
       },
       {
         "id": "14",
@@ -138,7 +191,12 @@
         "description": "Hotel.5-star Hotel",
         "additional": "pool.Tv.Air Conditioner.Parking.Internet",
         "price":"Ksh38,000",
-        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/ef/d4/a7/the-concord-hotel.jpg?w=1100&h=-1&s=1"
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/ef/d4/a7/the-concord-hotel.jpg?w=1100&h=-1&s=1",
+        "coords": {
+          "lat":-1.254295, 
+          "lng":36.815350 
+        }
+        
       },
       {
         "id": "15",
@@ -148,7 +206,11 @@
         "description": "Hotel.5-star Hotel",
         "additional": "Tv.Parking.Internet",
         "price":"Ksh31,000",
-        "image": "https://www.kenyawildlifetours.com/wp-content/uploads/2022/02/597e827e_z.jpg"
+        "image": "https://www.kenyawildlifetours.com/wp-content/uploads/2022/02/597e827e_z.jpg",
+        "coords": {
+          "lat":-1.233217, 
+          "lng":36.804734
+        }
       }
     ]
   }
