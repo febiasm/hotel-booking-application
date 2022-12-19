@@ -1,142 +1,188 @@
 
-#login-screen {
-    position: relative;
-    display: inline-block;
+  #login-screen {
+      position: relative;
+      display: inline-block;
+    }
+    #card {
+    /* login card */
+      top: 150px;
+      left: 100px;
+      z-index: 1;
+      display: flex;
+    }
+    
+
+  #background-image {
+    
+      background-position: center;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 550px;
+    
+        }
+        
+        #login-form {
+          position: relative;
+          left: 100px;
+          top: 50px;
+      }
+      #content{
+          text-align: center;
+          position: relative;
+          
+          top: 300px;
+      }
+      h2{
+          font-family:  Arial;
+          font-weight: bold;
+          color: black
+          ;
+      }
+
+      /* navigation bar */
+
+      #header {
+        position: fixed;
+        top: 0;
+        left: 0%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.6s;
+        padding: 40px 100px;
+        z-index: 3; /* add a transparent z-index value */
+      }
+      nav {
+        width: 80%; /* adjust the width to fit the links within it */
+      }
+      nav.sticky{
+        
+        background-color: aqua;
+        
+        
+      }
+      nav.sticky .logo
+      nav.sticky ul li a{
+        color: aliceblue;
+      }
+      nav .logo{
+        position: relative;
+        font-weight: 700;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-size: 2em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: 10.6s;
+
+      }
+
+    
+      nav ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        list-style: none;
+      }
+      
+
+      nav ul li {
+        position: relative;
+        list-style: none;
+        display: inline;
+      }
+
+      nav ul li a {
+        position: relative;
+        margin: 0 15px;
+        text-decoration: none;
+        color: black;
+        letter-spacing: 2px;
+        font-weight: 500px;
+        transition: 10.6s;
+      }
+      .bookingCalender{
+        float: left;
+        color: rgb(13, 15, 15);
+        margin-top:150px ;
+        
+      }
+      main {
+        padding-top: 150px; /* change the value to match the height of the navbar */
+        display: inline-block;
+       
+      }
+      
+        
+      
+      form {
+      
+        display: flex; /* change from inline-block to flex */
+        margin-left: 300px;
+        background-color: white;
+        
+      }
+      input[type="date"] {
+        margin: 0 100px; /* add a 10px margin to the left and right sides of each control */
+  
+      }
+      input[type="date"]:focus {
+        background-color: rgb(185, 178, 178); /* change the background color of the control when it is focused */
+      }
+      #map{
+         
+        margin-bottom: 100px;
+        float: right;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+      }
+      .map-container {
+        display: flex;
+        position: fixed;
+        right: 0;
+        top: 200px;
+        width: 40%;
+        height: 740px;
+      }
+      
+      
+
+  
+  #hotelCards {
+    display: flex; /* use flex layout instead of grid layout */
+    flex-wrap: wrap; /* wrap items to the next row if there is not enough space */
+    justify-content: flex-start; /* align items to the start of the container */
+    align-items: flex-start; /* align items to the top of the container */
+    margin-left: 30px; /* add a left margin to create some space between the map and the cards */
+  }
+
+  #hotelCards .card {
+    width: 300px; /* adjust the width of the cards to fit three in a row */
+    margin: 10px; /* add some spacing between the cards */
+  }
+  .cardContent {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* create 3 columns with a 1fr width each */
+     /* add a gap of 20px between the cards */
   }
   
   .card {
-    position: absolute;
-    top: 150px;
-    left: 100px;
-    z-index: 1;
+    width: 100%; /* set the width of the cards to 100% to fill the grid cells */
+    margin: 10px
   }
- 
-
-#background-image {
-   
-    background-position: center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 550px;
-  
-      }
-      
-      #login-form {
-        position: relative;
-        left: 100px;
-        top: 50px;
-    }
-    #content{
-        text-align: center;
-        position: relative;
-        
-        top: 300px;
-    }
-    h2{
-        font-family:  Arial;
-        font-weight: bold;
-        color: black
-        ;
-    }
-
-    /* navigation bar */
-
-    #header {
-      position: fixed;
-      top: 0;
-      left: 0%;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      transition: 0.6s;
-      padding: 40px 100px;
-      z-index: 3; /* add a transparent z-index value */
-    }
-    nav {
-      width: 80%; /* adjust the width to fit the links within it */
-    }
-    nav.sticky{
-      
-      background-color: aqua;
-      
-      
-    }
-    nav.sticky .logo
-    nav.sticky ul li a{
-       color: aliceblue;
-    }
-    nav .logo{
-      position: relative;
-      font-weight: 700;
-      color: rgb(0, 0, 0);
-      text-decoration: none;
-      font-size: 2em;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      transition: 10.6s;
-
-    }
-
-  
-    nav ul {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      list-style: none;
-    }
-    
-
-    nav ul li {
-      position: relative;
-      list-style: none;
-      display: inline;
-    }
-
-    nav ul li a {
-      position: relative;
-      margin: 0 15px;
-      text-decoration: none;
-      color: black;
-      letter-spacing: 2px;
-      font-weight: 500px;
-      transition: 10.6s;
-    }
-    .bookingCalender{
-      float: left;
-      color: rgb(13, 15, 15);
-      margin-top:150px ;
-      
-    }
-    main {
-      padding-top: 150px; /* change the value to match the height of the navbar */
-      display: inline-block;
-    }
-     
-      
-    
-    form {
-    
-      display: flex; /* change from inline-block to flex */
-      margin-left: 300px;
-      background-color: white;
-      
-    }
-    input[type="date"] {
-      margin: 0 100px; /* add a 10px margin to the left and right sides of each control */
- 
-    }
-    input[type="date"]:focus {
-      background-color: rgb(185, 178, 178); /* change the background color of the control when it is focused */
-    }
-    #map{
-      height: 400px;
-      width: 50%;
-      margin-bottom: 100px;
-    }
-    
-    
+#map {
+  position: absolute;
+  top: 5px; /* position the map 50px from the top of the page */
+  left: 0px; /* position the map 50px from the left of the page */
+}

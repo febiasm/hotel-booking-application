@@ -22,9 +22,12 @@
                 const image =hotel.image
 
                 const cardContent = document.querySelector('.cardContent');
-               
+                cardContent.style.display = 'flex';
+                
+
                 const card = document.createElement('div');
                 card.className = 'card';
+                card.id='hotelCards'
                 card.style.width = '18rem';
                 card.style.margin = '14px'  
                 cardContent.appendChild(card)
@@ -97,15 +100,15 @@ function initMap() {
      // add an info window to the marker
      if (hotel.name) {
        const infowindow = new google.maps.InfoWindow({
-         content: `
-         <div class="card" style="width: 10rem;">
-         <img src="${hotel.image}" class="card-img-top" alt="...">
-         <div class="card-body">
-           <h5 class="card-title">${hotel.name}</h5>
-           <p class="card-text">⭐ ${hotel.rating} ${hotel.class}</p>
-          
-         </div>
-       </div>`
+        content: `
+        
+          <img src="${hotel.image}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">${hotel.name}</h5>
+            <p class="card-text">⭐ ${hotel.rating} ${hotel.class}</p>
+          </div>
+        </div>`,
+      maxWidth: 250
        });
        marker.addListener('mouseover', function(){
          infowindow.open(map, marker);
@@ -201,6 +204,7 @@ function initMap() {
 
     const card= document.createElement('div')
     card.className = 'card'
+    card.id='card'
      card.style='width: 35rem'
      page.appendChild(card)
  
