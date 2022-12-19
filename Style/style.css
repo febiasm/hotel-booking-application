@@ -203,3 +203,6 @@
   height: 793px;
   margin-top: 20px; /* add a 20px top margin to the map container */
 }
+.card-img-top {
+  height: 200px;
+}

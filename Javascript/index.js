@@ -26,7 +26,7 @@
                 
 
                 const card = document.createElement('div');
-                card.className = 'card';
+                card.className = 'car';
                 card.id='hotelCards'
                 card.style.width = '18rem';
                 card.style.margin = '14px'  
@@ -73,7 +73,7 @@
 function initMap() {
   // The location of Uluru
   var options ={
-    zoom:12,
+    zoom:13,
     center:{lat:-1.291926,lng: 36.819230}
   }
   // The map, centered at Uluru
@@ -302,6 +302,8 @@ function initMap() {
     map.style.display='none';
     const main = document.querySelector('main'); 
     main.style.display = 'none';
+    const cardContainer = document.querySelector('.card-container');
+    cardContainer.style.display = 'none';
 
     const navbar = document.getElementById('navbar');
     document.getElementById("content").style.display="block";
@@ -321,6 +323,9 @@ function initMap() {
           if (map.style.display==='none'){
             map.style.display='block'
 
+          }
+          if(cardContainer.style.display === 'none'){
+            cardContainer.style.display = 'block';
           }
           else {
             navbar.style.display = 'none';
