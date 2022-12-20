@@ -64,7 +64,7 @@
 
                 const p5 = document.createElement('p');
                 p5.className = 'card-text';
-                p5.innerHTML = `${price} / night`;
+                p5.innerHTML = `<b>${price}</b> / night`;
                 cardBody.appendChild(p5);
 
                 const button =document.createElement('button')
@@ -83,12 +83,12 @@
           initMap();
 
 function initMap() {
-  // The location of Uluru
+  // The location of Nairobi
   var options ={
     zoom:13,
     center:{lat:-1.291926,lng: 36.819230}
   }
-  // The map, centered at Uluru
+  // The map, centered at   Nairobi
   var map = new google.maps.Map(document.getElementById("map"),options)  
 
   // add marker function 
@@ -151,7 +151,7 @@ function initMap() {
     list.appendChild(li)
 
     const a =document.createElement('a')
-    a.href='#'
+    a.href='/index.html'
     a.textContent=`home`
     li.appendChild(a)
 
@@ -229,16 +229,21 @@ function initMap() {
     
 
     const form =document.createElement('form')
-    form.id="calender"
+    form.id="login"
+    
     
     
     page.append(form)
+
+    const loginForm=document.createElement('form')
+    loginForm.className='loginForm'
+    page.appendChild(loginForm)
 
     const card= document.createElement('div')
     card.className = 'card'
     card.id='card'
      card.style='width: 35rem'
-     page.appendChild(card)
+     loginForm.appendChild(card)
  
  
      const cardBody = document.createElement('div')
@@ -247,6 +252,11 @@ function initMap() {
     const mb3= document.createElement('div')
     mb3.className='mb-3'
     cardBody.appendChild(mb3)
+
+    const login=document.createElement('p')
+    login.className='login'
+    login.textContent=` Login `
+     mb3.appendChild(login)
 
     const label = document.createElement('label')
     label.className='form-label' 
@@ -305,6 +315,36 @@ function initMap() {
     button.style='width: 32rem'
     cardBody.appendChild(button)
 
+    const link = document.createElement('a');
+    link.className = 'signUp';
+    link.textContent = 'Do not have an account?';
+    link.style='width: 32rem'
+    cardBody.appendChild(link)
+
+    // sign up Form
+    const signUpcard=document.getElementById('signupCard')
+    signUpcard.style.display='none'
+    link.addEventListener('click', () => {
+      document.getElementById("card").style.zIndex = "0";
+      signUpcard.style.display='block'
+    }) 
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
     const content=document.getElementById('content')
     
     const h2 =document.createElement('h2')
@@ -340,7 +380,34 @@ function initMap() {
     const navbar = document.getElementById('navbar');
     document.getElementById("content").style.display="block";
     document.getElementById("login-screen").style.display = "block";
-   
+
+
+    const button2=document.getElementById('btn')
+   button2.addEventListener('click', () => {
+    main.style.display = 'block';
+        
+        
+          if (header.style.display==='none') {
+            header.style.display='block'
+            
+          }
+          if ( cardContent.style.display === 'none'){
+            cardContent.style.display = 'block';
+          }
+          if (map.style.display==='none'){
+            map.style.display='block'
+
+          }
+          if(cardContainer.style.display === 'none'){
+            cardContainer.style.display = 'block';
+          }
+          else {
+            navbar.style.display = 'none';
+          }
+          document.getElementById("login-screen").style.display = "none"; 
+    document.getElementById("content").style.display="none";
+     document.getElementById('signupCard').style.display='none'
+});
     button.addEventListener('click', () => {
         main.style.display = 'block';
         
