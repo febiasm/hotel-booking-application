@@ -28,7 +28,7 @@
                 const card = document.createElement('div');
                 card.className = 'car';
                 card.id='hotelCards'
-                card.style.width = '18rem';
+                card.style.width = '22rem';
                 card.style.margin = '14px'  
                 cardContent.appendChild(card)
 
@@ -143,6 +143,13 @@ function initMap() {
     logo.className='logo'
     logo.textContent=`Febias-Travels`
     header.appendChild(logo )
+
+    // const logoImage= document.createElement('img')
+    // logoImage.src = ''
+    // logoImage.className='logoImage'
+    // logoImage.alt = 'Logo image'
+    // logo.appendChild(logoImage)
+    
 
     const list= document.createElement('ul')
     header.appendChild(list)
@@ -386,7 +393,7 @@ function initMap() {
    button2.addEventListener('click', () => {
     main.style.display = 'block';
         
-        
+        document.querySelector('.fontLogo').style.display='none'
           if (header.style.display==='none') {
             header.style.display='block'
             
@@ -410,7 +417,7 @@ function initMap() {
 });
     button.addEventListener('click', () => {
         main.style.display = 'block';
-        
+        document.querySelector('.fontLogo').style.display='none'
         
           if (header.style.display==='none') {
             header.style.display='block'
