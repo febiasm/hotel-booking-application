@@ -66,6 +66,18 @@
                 p5.className = 'card-text';
                 p5.innerHTML = `${price} / night`;
                 cardBody.appendChild(p5);
+
+                const button =document.createElement('button')
+                button.textContent='Book'
+                button.className='btn btn-outline-primary'
+                cardBody.appendChild(button)
+
+                button.addEventListener('click', () => {
+                  alert(`${name} has been successfully booked`)
+                  button.textContent='Booked'
+                  button.className='btn btn-outline-danger'
+
+                })
             });
           })
           initMap();
