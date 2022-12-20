@@ -62,7 +62,7 @@
       }
       nav.sticky{
         
-        background-color: aqua;
+        background-color: #003E6F;
         
         
       }
@@ -73,7 +73,7 @@
       nav .logo{
         position: relative;
         font-weight: 700;
-        color: rgb(0, 0, 0);
+         
         text-decoration: none;
         font-size: 2em;
         text-transform: uppercase;
@@ -105,6 +105,19 @@
         letter-spacing: 2px;
         font-weight: 500px;
         transition: 0.6s;
+      }
+      header.sticky{
+        padding: 5px 100px;
+        background: #fff;
+      }
+      header.sticky ul li a {
+        color:aliceblue
+      }
+      .header-scroll  ul li a {
+        color: white;
+      }
+      .logo-scroll {
+        color: white;
       }
       .bookingCalender{
         float: left;

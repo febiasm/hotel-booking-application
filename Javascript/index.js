@@ -188,6 +188,26 @@ function initMap() {
         var header = document.getElementById("header");
         header.classList.toggle("sticky", window.scrollY > 0);
     });
+    window.addEventListener("scroll", function() {
+      const header = document.querySelector("#header");
+      const logo = document.querySelector(".logo");
+    
+      // Add the header-scroll class to the header element when the user starts scrolling
+      if (window.scrollY > 0) {
+        header.classList.add("header-scroll");
+      } else {
+        header.classList.remove("header-scroll");
+      }
+    
+      // Add the logo-scroll class to the logo element when the user starts scrolling
+      if (window.scrollY > 0) {
+        logo.classList.add("logo-scroll");
+      } else {
+        logo.classList.remove("logo-scroll");
+      }
+    });
+      
+   
     
   
      
