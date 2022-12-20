@@ -28,7 +28,7 @@
                 const card = document.createElement('div');
                 card.className = 'car';
                 card.id='hotelCards'
-                card.style.width = '22rem';
+                card.style.width = '20.2rem';
                 card.style.margin = '14px'  
                 cardContent.appendChild(card)
 
@@ -37,6 +37,17 @@
                 img.className = 'card-img-top';
                 card.appendChild(img)
 
+                const div2 =document.createElement('div')
+                div2.className='like'
+                cardContent.appendChild(div2)
+              
+                const i = document.createElement('i')
+                i.className='fas fa-heart'
+                i.addEventListener('click', () => {
+                      i.classList.toggle('active')
+                })
+                div2.appendChild(i)
+  
                 const cardBody = document.createElement('div');
                 cardBody.className = 'card-body';
                 card.appendChild(cardBody)
@@ -121,6 +132,7 @@ function initMap() {
           </div>
         </div>`,
       maxWidth: 250
+      
        });
        marker.addListener('mouseover', function(){
          infowindow.open(map, marker);
@@ -131,7 +143,7 @@ function initMap() {
     }
   }
 }
-
+  
 
     const header= document.createElement('nav')
     header.id='header'

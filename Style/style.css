@@ -20,7 +20,17 @@
 a {
   cursor: pointer;
 }
+i{
+  font-size: 1.3em;
+  cursor: pointer;
+  z-index:10;
+  margin-left:20 ;
+}
 
+  .active{
+    color: rgb(255, 0, 111);
+    font-weight: bold;
+}
 
 
   #login-screen {

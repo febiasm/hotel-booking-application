@@ -5,7 +5,7 @@ This website is a platform for booking hotels in Nairobi. It allows users to vie
 
 Click on this link to run the application.
 
-    okokokokokok    
+http://hotel-booking-application-alpha.vercel.app/   
 
 upon opening the link you will be prompted to log in using your email and password, in the event that you do not have an account click on the do not have an account button just underneath the login button and creat an account. Once created click on the signup button and you'll be successfully logged in. 
 
