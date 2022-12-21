@@ -32,6 +32,15 @@ Open it in Visual Studio Code
 
 congratulations you have successfully cloned the app.
 
+## Technologies Used
+- HTML
+
+- CSS
+
+- JavaScript
+
+- Web API
+
 ## Author :
 
 This project was contributed by Trevor Febias

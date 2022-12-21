@@ -1,75 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/Style/style.css" />
-    <link rel="stylesheet" href="/Style/bootstrap.css" />
-    <script src="https://kit.fontawesome.com/0003d8ec54.js" crossorigin="anonymous"></script>
-    <title>Febias Hotels</title>
-  </head>
+
+<head>
+  <!-- Set the character encoding for the document -->
+  <meta charset="UTF-8" />
+  <!-- Set the viewport to make the page responsive on different devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Link to the stylesheet for the page -->
+  <link rel="stylesheet" href="/Style/style.css" />
+  <link rel="stylesheet" href="/Style/bootstrap.css" />
+  <!-- Add fontawesome icons -->
+  <script src="https://kit.fontawesome.com/0003d8ec54.js" crossorigin="anonymous"></script>
+  <!-- Set the title of the page -->
+  <title>Febias Hotels</title>
+</head>
+
+<section class="website logo">
+  <!-- Add a logo for the page -->
   <p class="fontLogo"><span style="color: red;">Febias</span><span style="color: white;"></span>-Travels</p>
+
+</section>
+
+<section class="signup page">
+  <!-- Add a signup form to the page -->
   <div id=" signup-screen">
     <form class="signup">
+      <!-- Use a card to style the form -->
       <div id="signupCard" class="card -2" style="width: 28rem;">
-      <label for="name">Name:</label><br>
-      <input  id="signUpp" type="text" id="name" name="name"placeholder="Enter your Name"><br>
-      <label for="email">Email:</label><br>
-      <input   id="signUpp" type="email"id="email" name="email"placeholder="Enter your Email"><br>
-      <label for="password">Password:</label><br>
-      <input id="signUpp" type="password" id="password" name="password"placeholder="Enter your password"><br><br>
-      <label for="phone">Phone number:</label><br>
-      <input id="signUpp"type="tel" id="phone" name="phone"placeholder="Enter your phone Number"><br>
-      <a href="#" id="btn"class="btn btn-outline-dark">SignUp</a>
-    </div>
+        <!-- Add a label and input field for the user's name -->
+        <label for="name">Name:</label><br>
+        <input id="signUpp" type="text" id="name" name="name" placeholder="Enter your Name"><br>
+        <!-- Add a label and input field for the user's email -->
+        <label for="email">Email:</label><br>
+        <input id="signUpp" type="email" id="email" name="email" placeholder="Enter your Email"><br>
+        <!-- Add a label and input field for the user's password -->
+        <label for="password">Password:</label><br>
+        <input id="signUpp" type="password" id="password" name="password" placeholder="Enter your password"><br><br>
+        <!-- Add a label and input field for the user's phone number -->
+        <label for="phone">Phone number:</label><br>
+        <input id="signUpp" type="tel" id="phone" name="phone" placeholder="Enter your phone Number"><br>
+        <!-- Add a button for the user to submit the form -->
+        <a href="#" id="btn" class="btn btn-outline-dark">SignUp</a>
+      </div>
     </form>
   </div>
+</section>
+
+<section class="login form">
+  <!-- Add a section for the login form and main content -->
   <div class="hide">
-  <div id="main2" class="main">
-   
-  </div>
-  <section class="signupForm">
-    
+    <div id="main2" class="main">
 
-  </section>
-  
-  <section class="loginForm">
- 
-    <div id="login-screen">
-     </div>
-    <div id="mainContent"></div>
-    <main>
-      
-      <form>
-        <label for="start-date">Start date:</label>
-        <input class="form-control" type="date" id="start-date" name="start-date" style="width: 18rem;">
-        <label for="end-date">End date:</label>
-        <input class="form-control" type="date" id="end-date" name="end-date" style="width: 18rem;">
-      </form>
-    </main>
-   
-    <div id="content"> </div>
-    <div class="card-grid">
-    <div class="card-container">
-    <div class="cardContent"></div>
+    </div>
+
+    <section class="loginForm">
+
+      <div id="login-screen">
+      </div>
+    </section>
+    <section class="main page content">
+      <!-- Add a main content area -->
+      <div id="mainContent"></div>
+      <main>
+        <!-- added a calender form -->
+        <form>
+          <label for="start-date">Start date:</label>
+          <input class="form-control" type="date" id="start-date" name="start-date" style="width: 18rem;">
+          <label for="end-date">End date:</label>
+          <input class="form-control" type="date" id="end-date" name="end-date" style="width: 18rem;">
+        </form>
+      </main>
+
+      <div id="content"> </div>
+      <div class="card-grid">
+        <div class="card-container">
+          <div class="cardContent"></div>
+        </div>
+      </div>
   </div>
-  </div>
-  </div>
+</section>
+
+<section class="map">
+  <!-- added a map -->
   <div class="map-container">
-  <div id="map"></div>
-</div>
-   
+    <div id="map"></div>
+  </div>
 
-    
-   <script
-   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIW6EA2N4PKHBeRWvr_xuctRuZTbYU8TI&callback=initMap&v=weekly"
-   defer
- ></script>
- <script src="/Javascript/index.js"></script>
- 
- 
-   
- 
+  <!-- google script for the map -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIW6EA2N4PKHBeRWvr_xuctRuZTbYU8TI&callback=initMap&v=weekly"
+    defer></script>
+</section>
+
+<script src="/Javascript/index.js"></script>
 </body>
+
 </html>
