@@ -1,6 +1,6 @@
 window.onload = () => {
   // URL for the hotel data
-  const url = "https://api.jsonbin.io/v3/b/63a238d3dfc68e59d56d4d87";
+  const url = "https://api.jsonbin.io/v3/b/6421a35eebd26539d09e0100";
   // Fetch the hotel data from the URL
   fetch(url)
     .then((response) => response.json())
